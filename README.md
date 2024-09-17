@@ -1,12 +1,17 @@
+This tool was made for dataset preparation for LORA training although it could be used for a variety of applications.
+
+
 ### How to Use:
 
 1. **Save the Script:**
 
    Save the script above as `crop_images_gui_windows.py` on your Windows machine.
+
 2. **Install Python:**
 
    * Download Python 3.7 or newer from the [official website](https://www.python.org/downloads/windows/).
    * During installation, make sure to check the box that says **"Add Python to PATH"**.
+
 3. **Install Required Packages:**
 
    Open Command Prompt (you can search for `cmd` in the Start menu) and run:
@@ -15,9 +20,8 @@
    pip install ultralytics
    ```
 
-
-
    * If `pip` is not recognized, you may need to restart Command Prompt or add Python to your system PATH manually.
+
 4. **Run the Script:**
 
    In Command Prompt, navigate to the directory where you saved `crop_images_gui_windows.py`:
@@ -26,16 +30,11 @@
    cd path\to\your\script
    ```
 
-
-
    Then run the script:
 
    ```
    python crop_images_gui_windows.py
    ```
-
-
-
 
 5. **Using the GUI:**
 
@@ -43,9 +42,6 @@
    * **Output Folder:** Click the "Browse..." button next to "Output Folder" to select where you want the cropped images to be saved.
    * **Class Identifier:** Use the dropdown menu to select the object class you want to detect and crop.
    * **Start Cropping:** Click the "Start Cropping" button to begin the process.
-
-
-
 
 6. **Processing:**
 
@@ -61,7 +57,6 @@
   ```
   pip install ultralytics
   ```
-
 
 * **Tkinter:** Tkinter is included with Python on Windows. If you encounter any issues, reinstall Python and ensure that the "tcl/tk and IDLE" feature is selected during installation.
 
@@ -103,6 +98,12 @@ The `CLASS_LABELS` list contains object classes from the COCO dataset. You can m
 
 ***
 
+YOLO is based on the COCO Dataset: <https://cocodataset.org/#explore>
+
+
+
+All 80 classes are in the script.
+
 ### Notes:
 
 * **Threading:** The script uses threading to keep the GUI responsive during image processing.
@@ -121,15 +122,14 @@ The `CLASS_LABELS` list contains object classes from the COCO dataset. You can m
   pip list
   ```
 
-
-
-
 * **Tkinter Not Found:**
 
   If Tkinter is not working, ensure that you have the "tcl/tk and IDLE" option selected during Python installation.
+
 * **Permission Issues:**
 
   Ensure you have read permissions for the source folder and write permissions for the output folder.
+
 * **Long File Paths:**
 
   Windows has a maximum path length limitation. If you encounter issues related to file paths, try using directories with shorter paths.
@@ -153,7 +153,6 @@ The `CLASS_LABELS` list contains object classes from the COCO dataset. You can m
   ]
   ```
 
-
 * **Model Selection:**
 
   If you wish to use a different YOLOv8 model, modify the line:
@@ -164,8 +163,6 @@ The `CLASS_LABELS` list contains object classes from the COCO dataset. You can m
 
   to use other model weights like `yolov8s.pt`, `yolov8m.pt`, etc.
 
-
-
 * **Advanced Settings:**
 
   For additional settings like confidence thresholds or image sizes, adjust the `model.predict()` parameters. For example:
@@ -174,10 +171,6 @@ The `CLASS_LABELS` list contains object classes from the COCO dataset. You can m
   model.predict( source=source, save=True, save_crop=True, classes=[class_id], project=output, conf=0.5, # Confidence threshold imgsz=640 # Image size )
   ```
 
-
-
-
-
 ***
 
 ### Additional Tips:
@@ -185,6 +178,7 @@ The `CLASS_LABELS` list contains object classes from the COCO dataset. You can m
 * **Running as an Executable:**
 
   If you prefer to run the script without invoking Python explicitly, you can create a batch file (`.bat`) or use tools like PyInstaller to create an executable.
+
 * **Environment Isolation:**
 
   Consider using a virtual environment to manage dependencies and avoid conflicts:
@@ -192,7 +186,6 @@ The `CLASS_LABELS` list contains object classes from the COCO dataset. You can m
   ```
   python -m venv venv venv\Scripts\activate pip install ultralytics
   ```
-
 
 * **Check GPU Availability:**
 
