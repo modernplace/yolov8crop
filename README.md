@@ -1,4 +1,6 @@
-This tool was made for dataset preparation for LORA training although it could be used for a variety of applications.
+This simple tool was made for dataset preparation for LORA training although it could be used for a variety of applications.
+
+This GUI was meant for Windows, but if you're on Linux it should run the same. 
 
 
 ### How to Use:
