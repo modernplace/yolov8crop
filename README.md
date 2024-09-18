@@ -36,7 +36,7 @@ This GUI was meant for Windows, but if you're on Linux it should run the same.
    Then run the script:
 
    ```
-   python crop_images_gui_windows.py
+   python crop_images_gui.py
    ```
 
 5. **Using the GUI:**
