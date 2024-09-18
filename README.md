@@ -7,7 +7,7 @@ This GUI was meant for Windows, but if you're on Linux it should run the same.
 
 1. **Save the Script:**
 
-   Save the script above as `crop_images_gui_windows.py` on your Windows machine.
+   Save the script above as `crop_images_gui.py` on your Windows machine.
 
 2. **Install Python:**
 
