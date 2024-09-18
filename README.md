@@ -59,10 +59,10 @@ FYI: I'm no picasso.
 
 ### Dependencies:
 
-* **Ultralytics YOLOv8:** Install via pip:
+*  Install via pip:
 
   ```
-  pip install ultralytics
+  pip install ultralytics opencv-python Pillow numpy
   ```
 
 * **Tkinter:** Tkinter is included with Python on Windows. If you encounter any issues, reinstall Python and ensure that the "tcl/tk and IDLE" feature is selected during installation.
@@ -170,15 +170,6 @@ All 80 classes are in the script.
 
   to use other model weights like `yolov8s.pt`, `yolov8m.pt`, etc.
 
-* **Advanced Settings:**
-
-  For additional settings like confidence thresholds or image sizes, adjust the `model.predict()` parameters. For example:
-
-  ```
-  model.predict( source=source, save=True, save_crop=True, classes=[class_id], project=output, conf=0.5, # Confidence threshold imgsz=640 # Image size )
-  ```
-
-***
 
 ### Additional Tips:
 
