@@ -27,7 +27,7 @@ This GUI was meant for Windows, but if you're on Linux it should run the same.
 
 4. **Run the Script:**
 
-   In Command Prompt, navigate to the directory where you saved `crop_images_gui_windows.py`:
+   In Command Prompt, navigate to the directory where you saved `crop_images_gui.py`:
 
    ```
    cd path\to\your\script
