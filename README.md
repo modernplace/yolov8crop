@@ -13,13 +13,14 @@ This GUI was meant for Windows, but if you're on Linux it should run the same.
 
    * Download Python 3.7 or newer from the [official website](https://www.python.org/downloads/windows/).
    * During installation, make sure to check the box that says **"Add Python to PATH"**.
+   * The script is compatible with Python 3.x
 
 3. **Install Required Packages:**
 
    Open Command Prompt (you can search for `cmd` in the Start menu) and run:
 
    ```
-   pip install ultralytics
+   pip install ultralytics opencv-python Pillow numpy
    ```
 
    * If `pip` is not recognized, you may need to restart Command Prompt or add Python to your system PATH manually.
