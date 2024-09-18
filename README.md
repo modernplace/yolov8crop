@@ -41,9 +41,13 @@ This GUI was meant for Windows, but if you're on Linux it should run the same.
 
 5. **Using the GUI:**
 
+FYI: I'm no picasso. 
+
    * **Source Image Folder:** Click the "Browse..." button next to "Source Image Folder" to select the folder containing your input images.
    * **Output Folder:** Click the "Browse..." button next to "Output Folder" to select where you want the cropped images to be saved.
    * **Class Identifier:** Use the dropdown menu to select the object class you want to detect and crop.
+   * **Max Dimensions:** Set the maximum dimensions to save the cropped images in.
+   * **Padding:** Include the padding (in pixels) for the crop around the subject.
    * **Start Cropping:** Click the "Start Cropping" button to begin the process.
 
 6. **Processing:**
